@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 suck
+  p Welcome to you suck
+  //- - for (var i = 0; i < signTypes.length; i++)
+  //-   p= signTypes[i]
+  each val in signTypes
+    p= val
+
