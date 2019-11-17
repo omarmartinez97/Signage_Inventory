@@ -1,10 +1,13 @@
 extends layout
 
 block content
-  h1 suck
+  h1 Loginplz
   p Welcome to you suck
+  p
+    input(type="text",placeholder="username" )
+    input(type="password",placeholder="password" )
+    input(type="submit")
   //- - for (var i = 0; i < signTypes.length; i++)
   //-   p= signTypes[i]
   each val in signTypes
     p= val
-
