@@ -11,5 +11,7 @@ router.get('/reports', function(req, res, next) {
 router.get('/Login',(req,res) =>{
   res.render('Login.jade') 
 } )
-
+router.get('/MainPage',(req,res) =>{
+  res.render('MainPage.jade') 
+} )
 module.exports = router;
