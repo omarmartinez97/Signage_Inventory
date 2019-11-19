@@ -8,5 +8,8 @@ router.get('/', function(req, res, next) {
 router.get('/reports', function(req, res, next) {
   res.render('reports', { signTypes: ['Express','sign','another sign'] });
 });
+router.get('/Login',(req,res) =>{
+  res.render('Login.jade') 
+} )
 
 module.exports = router;
