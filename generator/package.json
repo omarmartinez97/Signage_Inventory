@@ -1,5 +1,5 @@
 {
-  "name": "signage-inventory",
+  "name": "generator",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,8 +11,6 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1",
-    "nodemon": "^1.19.4",
-    "server": "^1.0.19"
+    "morgan": "~1.9.1"
   }
 }

@@ -5,11 +5,22 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { signTypes: ['Express','sign','another sign'] });
 });
+
+router.get('/reports/:search', function(req, res, next) {
+  // var search = req.params.tagId;
+  // var signTypes = ['Express','sign','another sign'];
+  //var signTypes = sql call;
+  var query = 'SELECT * FROM signs WHERE LOWER(description) LIKE (\'%' + req.params.search.toLowerCase() + '%\')'
+  // var returned_sql = db.query(query)
+  // res.render('reports-search', { signs: returned_sql });
+  res.send(query)
+});
 router.get('/reports', function(req, res, next) {
   res.render('reports', { signTypes: ['Express','sign','another sign'] });
 });
+
 router.get('/Login',(req,res) =>{
-  res.render('Login.jade') 
-} )
+  res.render('Login.jade')
+});
 
 module.exports = router;
