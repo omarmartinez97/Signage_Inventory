@@ -18,9 +18,10 @@ router.get('/reports/:search', function(req, res, next) {
 router.get('/reports', function(req, res, next) {
   res.render('reports', { signTypes: ['Express','sign','another sign'] });
 });
-
-router.get('/Login',(req,res) =>{
-  res.render('Login.jade')
-});
-
+router.get('/login',(req,res) =>{
+  res.render('login.jade')
+} )
+router.get('/mainpage',(req,res) =>{
+  res.render('mainpage.jade')
+} )
 module.exports = router;
